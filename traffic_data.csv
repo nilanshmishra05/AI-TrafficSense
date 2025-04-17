@@ -1,0 +1,8 @@
+vehicle_count,traffic_status
+10,CLEAR
+25,CLEAR
+40,BUSY
+60,BUSY
+75,JAM
+90,JAM
+100,JAM
