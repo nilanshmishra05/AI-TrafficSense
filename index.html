@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-TrafficSense</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  🚦 <span>AI-TrafficSense</span>
+</header>
+
+<div class="container">
+  <!-- Left Panel -->
+
+  <div class="left-panel">
+    <div class="section-title">📊 Live Traffic Simulation</div>
+    <div class="status-box">
+      ✅ Road is Clear. Vehicles can move freely.
+    </div>
+
+    <div class="section-title" style="margin-top: 30px;">📉 Live Vehicle Count Chart</div>
+    <div class="chart">
+      <canvas id="vehicleChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div class="right-panel">
+    <div class="section-title">📈 Traffic Insights</div>
+    <div class="info-box">
+      🚗 Vehicle Count: <span id="vehicleCount">7</span>
+    </div>
+    <div class="info-box">
+      ⏱ Avg Wait Time: <span>0 - 1 min <span style="color:red">↓ -2 min</span></span>
+    </div>
+    <div class="info-box">
+      🌍 Pollution Level: <span>Low</span>
+    </div>
+    <button class="button">⬇ Download Vehicle Log CSV</button>
+
+    <div class="footer-note">
+      Real-time predictions help in adjusting signal timers dynamically.
+    </div>
+  </div>
+</div>
+
+<div class="section-title" style="margin: 30px 20px 10px;">📹 CCTV Live Feeds</div>
+<div class="cctv-grid">
+  <!-- Camera 1 -->
+  <div class="cctv-item">
+    <video src="cctv1.mp4" controls autoplay muted loop></video>
+    <div class="camera-light">
+      <div class="light red" id="red1"></div>
+      <div class="light green" id="green1"></div>
+    </div>
+  </div>
+
+  <!-- Camera 2 -->
+  <div class="cctv-item">
+    <video src="cctv2.mp4" controls autoplay muted loop></video>
+    <div class="camera-light">
+      <div class="light red" id="red2"></div>
+      <div class="light green" id="green2"></div>
+    </div>
+  </div>
+
+  <!-- Camera 3 -->
+  <div class="cctv-item">
+    <video src="cctv3.mp4" controls autoplay muted loop></video>
+    <div class="camera-light">
+      <div class="light red" id="red3"></div>
+      <div class="light green" id="green3"></div>
+    </div>
+  </div>
+
+  <!-- Camera 4 -->
+  <div class="cctv-item">
+    <video src="cctv4.mp4" controls autoplay muted loop></video>
+    <div class="camera-light">
+      <div class="light red" id="red4"></div>
+      <div class="light green" id="green4"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<img src="http://localhost:5000/video_feed" />
+
+</body>
+</html>
